@@ -53,6 +53,18 @@ body {
     gap: 50vh;
 }
 
+.reset__button{
+    color: var(--text--color);
+    background-color: var(--main--color);
+    border-style: hidden;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.reset__button.hover{
+    box-shadow: none;
+}
+
 .choice__player{
     display: flex;
     flex-direction: column;

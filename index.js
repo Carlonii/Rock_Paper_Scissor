@@ -57,10 +57,12 @@ function playRound(playerSelection , computerSelection ){
 
 function endGame(message) {
     roundResult.textContent = message;
-    roundInfo.textContent = `Clique em qualquer botao para reiniciar o jogo` ;
-    rockBtn.addEventListener('click', () => restartGame());
-    paperBtn.addEventListener('click', () => restartGame());
-    scissorBtn.addEventListener('click', () => restartGame());
+    roundInfo.textContent = `Clique no botao reset para comecar outro game botao para reiniciar o jogo` ;
+    rockBtn.style.display = 'none';
+    paperBtn.style.display = 'none';
+    scissorBtn.style.display = 'none';
+    resetBtn.style.display = '';
+    resetBtn.addEventListener('click', () => restartGame());
 }
 
 function restartGame() {
@@ -70,7 +72,9 @@ function restartGame() {
     roundInfo.textContent = 'First to get 3 points wins the game' ;
     playerScore.textContent = 'Player: 0' ;
     computerScore.textContent = 'Computer: 0' ;
-    playGame();
+    rockBtn.style.display = '';
+    paperBtn.style.display = '';
+    scissorBtn.style.display = '';
   }
 
 
@@ -85,6 +89,7 @@ function handleButtonClick(choice){
 }
 
 function playGame(){
+    resetBtn.style.display = 'none';
     rockBtn.addEventListener('click', () => handleButtonClick('rock'));
     paperBtn.addEventListener('click', () => handleButtonClick('paper'));
     scissorBtn.addEventListener('click', () => handleButtonClick('scissor'));
