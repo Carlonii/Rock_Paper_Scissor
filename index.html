@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <!-- inicio cabecalho -->
+    <header class="titulo">
+        <h1 class="titulo__text">Rock Paper Scissor</h1>
+    </header>
+    <!-- Fim cabecalho -->
+    <main>
+        <!-- Inicio contagem de pontos-->
+        <div class="contagem">
+            <h2 class="contagem__info" id="roundResult">Choose</h2>
+            <h2 class="contagem_pontuacao" id="roundInfo">First to get 3 points wins the game</h3>
+        </div>
+        <!-- Fim contagem de pontos -->
+
+        <!-- Inicio players choice -->
+        <div class="choice">
+            <div class="choice__player">
+                <h2 class="player__text" id="playerScore">Player : 0</h2>
+                <span class="material-icons" class="computer__icon">
+                    person
+                </span>
+            </div>
+            <div class="choice__computer">
+                <h2 class="computer__text" id="computerScore">Computer : 0 </h2>
+                <span class="material-icons" class="computer__icon">
+                    computer
+                </span>
+            </div>
+        </div>
+        <!-- Fim players choice -->
+
+        <!-- Inicio selecao rock paper scissor -->
+        <div class="selection">
+            <button class="selection__button" id="rockBtn">
+                <img src="imgs/rock.png" class="selection__img">
+            </button>
+            <button class="selection__button" id="paperBtn">
+                <img src="imgs/paper.png"class="selection__img">
+            </button>
+            <button class="selection__button" id="scissorBtn">
+                <img src="imgs/scissor.png" class="selection__img">
+            </button>
+        </div>
+        <!-- Fim selecao rock paper scissor -->
+    </main>
+
+    <footer class="endofpage">
+        <h3 class="endofpage__text">Copyright : Filipe Carloni</h3>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
+

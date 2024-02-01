@@ -1,0 +1,111 @@
+:root {
+    --header_color: #1B4242 ;
+    --main--color: #5C8374 ;
+    --text--color: #FFFFFF ; 
+    --color-light: rgba(4, 4, 6, 0.18);
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main--color);
+    color: var(--text--color);
+}
+
+.titulo {
+    background-color: var(--header_color) ;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.titulo__text {
+    font-size: 48px;
+}
+
+.contagem{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contagem__info{
+    font-size: 36px;
+}
+
+.contagem_pontuacao{
+    font-size: 36px;
+}
+
+.choice{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50vh;
+}
+
+.choice__player{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.player__text{
+    font-size: 36px;
+}
+
+.choice__computer{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.computer__text{
+    font-size: 36px;
+}
+
+.material-icons{
+    align-self: center;
+    font-size: 60px;
+}
+
+.selection{
+    padding: 40px 0 ;
+    display: flex;
+    gap: 30vh;
+    justify-content: center;
+}
+
+.selection__button{
+    background-color: var(--main--color);
+    border-style: hidden;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.selection__button:hover{
+    box-shadow: none;
+}
+
+.selection__img{
+    width: 50%;
+}
+
+.endofpage{
+    display: flex;
+    justify-content: center;
+}
+
+.endofpage__text{
+    font-size: 18px;
+}
+
